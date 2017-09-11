@@ -115,4 +115,5 @@ default['ssh-hardening']['ssh']['server'].tap do |server| # rubocop: disable Blo
   server['sftp']['enable']           = false
   server['sftp']['group']            = 'sftponly'
   server['sftp']['chroot']           = '/home/%u'
+  server['sftp']['password_authentication']	= false
 end
